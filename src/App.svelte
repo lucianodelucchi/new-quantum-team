@@ -105,9 +105,9 @@
   {#if teamsCompleted}
     <div class="teams" transition:slide>
       <div>🎾🙆‍♂️🎾🙆‍♂️</div>
-      <div>{team1}</div>
+      <div class="team">{team1}</div>
       <div>🆚</div>
-      <div>{team2}</div>
+      <div class="team">{team2}</div>
       <div>🎾🙆‍♂️🎾🙆‍♂️</div>
       {#if !isQuantumSeed}
         <details>
@@ -184,6 +184,10 @@
     display: inline-block;
     font-size: small;
     margin: 1rem;
+  }
+
+  div.team {
+    padding: 1.5rem 0;
   }
 
   section.history div.entry {
